@@ -1,6 +1,6 @@
 <?php
-  error_reporting(E_ALL);
-  ini_set('display_errors', 1);
-
-  $db_conn = mysqli_connect("localhost", "root") or die("Connection Error!".mysqli_connect_error());
+$dbhost = "localhost:3307";
+ $dbuser = "root";
+ $dbpass = "system";
+ $db_conn = new mysqli($dbhost, $dbuser, $dbpass, "mysql") or die("Connect failed: %s\n". $conn -> error);
 ?>
